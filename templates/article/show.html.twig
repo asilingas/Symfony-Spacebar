@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read {{ title }} {% endblock %}
+
+{% block body %}
+
+<h1>{{ title }}</h1>
+
+<div>
+
+    <p>
+
+        Praesent efficitur, erat vitae venenatis feugiat, dui turpis pharetra massa, vel gravida sem erat ac tellus. Duis cursus nec tortor et condimentum. Donec elit dui, convallis at nisi in, tempus condimentum nisi. Proin pulvinar urna sit amet vehicula facilisis. Integer nulla lacus, blandit vitae consectetur eu, iaculis vitae ipsum. Maecenas luctus, massa et molestie fringilla, tortor ante tempor erat, fermentum varius enim urna accumsan elit. Mauris ut vestibulum dolor, ac ullamcorper tellus.
+
+    </p>
+
+    <p>
+
+        Vivamus vel consectetur lectus, quis pharetra neque. Ut at tortor metus. Nulla facilisi. Etiam id lorem non lacus vestibulum varius a sed mauris. Nullam mollis, tellus pretium dapibus iaculis, diam massa consectetur tortor, non iaculis justo lacus vitae justo. Cras laoreet in lacus quis finibus. Phasellus porttitor arcu a nulla semper rhoncus. Phasellus commodo, arcu ac suscipit elementum, neque lectus condimentum turpis, id consectetur enim nunc sit amet ex. Curabitur iaculis dui non ipsum consequat finibus. Nunc finibus sapien nunc, non accumsan felis vulputate at.
+
+    </p>
+
+    <p>
+
+        Sed malesuada elit vel consectetur consectetur. Suspendisse aliquet enim nec arcu imperdiet, ac commodo dui volutpat. Praesent neque massa, convallis a nunc sit amet, fermentum mattis dolor. Cras fermentum nibh nec sollicitudin placerat. Quisque pulvinar sodales odio, vulputate faucibus tortor euismod at. Vivamus varius felis erat, et rutrum nisi egestas vitae. Morbi ac ornare ligula. Maecenas sit amet ultricies nunc, id molestie velit.
+
+    </p>
+
+</div>
+
+<h2>Comments ({{ comments|length }})</h2>
+
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
